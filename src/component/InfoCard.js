@@ -11,7 +11,7 @@ const InfoCard = ({item}) => {
 
   return (
     <div className="card-style" onClick={showDetail}>
-      <img src={item?.img}/>
+      <img src={item?.img} width={264} height={396}/>
         <div>{item?.choice === true ? "Conscious Choice" : ""}</div>
         <div>{item?.title}</div>
         <div>\{item?.price}</div>
@@ -20,4 +20,4 @@ const InfoCard = ({item}) => {
   )
 }
 
-export default InfoCard
+export default InfoCard;

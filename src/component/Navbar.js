@@ -5,6 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate} from "react-router-dom";
 import { Button } from "react-bootstrap";
 
+
 const Navbar = () => {
     const menuList = [
         '한식',
@@ -32,11 +33,12 @@ const goToLogin = () => {
             <img 
             width={100}
             src="https://3.bp.blogspot.com/--g1ftdzaV8o/We8_zN8b_nI/AAAAAAAAAqs/VFXs_X7QkFECMZZkhNGudsYV6Ws1m2k7wCLcBGAs/s1600/gbgsLOGO%2528gbgs.go.kr%2529.gif"
-        
             />
         </div>
         
-        <div className="menu-area">
+        <div className="container-style">
+            
+            <div className="menu-area">
             <div className="input-area">
                 <FontAwesomeIcon icon={faSearch}/>
                 <input type="text"/>
@@ -49,8 +51,10 @@ const goToLogin = () => {
             </ul>
 
             <div className="button-style">
-                 <Button>건의하기</Button>
+                 <Button>맛집 추가하기</Button>
             </div>
+        </div>
+            
         </div>
     </div>
   )
