@@ -17,9 +17,16 @@ const Navbar = () => {
 
 const navigate = useNavigate();
 
+const goToMain = () => {
+    navigate('/');
+};
 const goToLogin = () => {
     navigate('/login');
-};    
+};   
+const goToAdd = () => {
+    navigate('/add_location');
+};
+
     return (
     <div>
         <div>
@@ -33,6 +40,7 @@ const goToLogin = () => {
             <img 
             width={100}
             src="https://3.bp.blogspot.com/--g1ftdzaV8o/We8_zN8b_nI/AAAAAAAAAqs/VFXs_X7QkFECMZZkhNGudsYV6Ws1m2k7wCLcBGAs/s1600/gbgsLOGO%2528gbgs.go.kr%2529.gif"
+            onClick={goToMain}
             />
         </div>
         
@@ -50,7 +58,7 @@ const goToLogin = () => {
                 )}
             </ul>
 
-            <div className="button-style">
+            <div className="button-style" onClick={goToAdd}>
                  <Button>맛집 추가하기</Button>
             </div>
         </div>

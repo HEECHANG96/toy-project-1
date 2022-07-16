@@ -2,11 +2,13 @@
   display: flex;
   justify-content: flex-start;
   margin-top:20px;
+  cursor:pointer;
 }
 
 .nav-section {
   display:flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .menu-area {
@@ -31,3 +33,4 @@
 .container-style {
   width:100vw;
 }
+
